@@ -1,0 +1,108 @@
+/* General Section Styles */
+#about {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#about .subheading {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* About Content Layout */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-text a {
+    color: #6200ea;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-text a:hover {
+    color: #3700b3;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: #6200ea;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #3700b3;
+}
+
+/* Skills Section */
+.about-skills {
+    max-width: 400px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-skills h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-skills ul li {
+    background-color: #e0e0e0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 14px;
+    color: #333;
+}

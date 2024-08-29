@@ -1,38 +1,162 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;  /* Consider using a modern font like Poppins */
+  background-color: #f8f9fa;  /* Lighter background */
+  color: #333;
+  line-height: 1.6;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2 {
+  color: #444;  /* Slightly darker for better contrast */
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: #ff6b6b;  /* Vibrant coral color */
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a:hover {
+  text-decoration: underline;
+  color: #ff4757;  /* Slightly darker on hover */
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e0e0e0;  /* Softer border */
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Button Styles */
+button, .toggle-button {
+  background-color: #1e90ff;  /* Dodger Blue */
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover, .toggle-button:hover {
+  background-color: #0a74da;  /* Darker blue on hover */
+  transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Specific Section Enhancements */
+/* header {
+  background-color: #f0f2f5;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+} */
+
+/* .project:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+body.dark-mode .project {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  box-shadow: none;
+}
+
+body.dark-mode .toggle-button {
+  background-color: #bb86fc;
+  color: #121212;
+}
+
+body.dark-mode .toggle-button:hover {
+  background-color: #3700b3;
+}
+
+body.dark-mode .about-content p {
+  color: #e0e0e0;
+}
+
+body.dark-mode .skills-section {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .contact-section {
+  background-color: #1f1f1f;
+}
+
+/* Transition for Dark Mode */
+body, header, .project, .toggle-button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skills-section {
+  background-color: #f0f2f5;  /* Light background */
+  color: #444;
+}
+
+.skills-section .skill {
+  background-color: #03dac5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.contact-section {
+  background-color: #f8f9fa;  /* Light background for better contrast */
+  color: #333;
+}
+
+.download-resume {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download-resume:hover {
+  background-color: #3700b3;
 }
